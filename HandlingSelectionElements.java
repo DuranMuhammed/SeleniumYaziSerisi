@@ -6,20 +6,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.locators.RelativeLocator;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import java.time.Duration;
-
 
 public class HandlingSelectionElements {
 
-    private static WebDriverWait wait;
-
     public static void main(String[] args) {
 
-
         WebDriver driver = new ChromeDriver();
-        wait = new WebDriverWait(driver, Duration.ofSeconds(15));
-
         driver.manage().window().maximize();
         driver.navigate().to("https://demoqa.com/automation-practice-form");
 
